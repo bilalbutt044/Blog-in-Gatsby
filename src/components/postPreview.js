@@ -40,7 +40,7 @@ const Author = styled("p")`
 const PostPreview = ({ post }) => (
   <Article>
     <PostImageLink to={post.slug}>
-      <PostImage fluid={post.image.sharp.fluid} alt={post.title} />
+      <PostImage fluid={post.image} alt={post.title} />
     </PostImageLink>
     <PostInfo>
       <Title to={post.slug}>{post.title}</Title>
